@@ -117,7 +117,8 @@ header .container {
 }
 
 .services .services_hr {
-    margin-top: 19px;
+    margin-top: 10px;
+    border: none;
     width: 65px;
     height: 2px;
     background-color: #4a4a4a;
@@ -196,7 +197,8 @@ header .container {
  }
 
 .works .works_hr {
-    margin-top: 19px;
+    margin-top: 10px;
+    border: none;
     width: 50px;
     height: 2px;
     background-color: #4a4a4a;
@@ -224,3 +226,189 @@ header .container {
     padding: 5px 0px 5px 0px;
 }
 
+.references {
+    padding: 147px 0px 108px 0px;
+    position: relative;
+}
+
+.references .references_hr {
+    margin-top: 10px;
+    border: none;
+    width: 100px;
+    height: 2px;
+    background-color: #4a4a4a;
+}
+
+.references .references_wrapper {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.references .references_rails {
+    position: absolute;
+    right:66%;
+    bottom: 33%;
+    z-index: -1;
+    
+}
+
+.references .references_img {
+    width: 100%;
+    margin-right: 60px;
+    width: 320px;
+    height: 320px;
+}
+
+.references .references_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.references .references_heading  {
+    font-size: 35px;
+    font-weight: 700;
+    color: #303030;
+}
+
+.references .references_descr {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 300;
+    color: #5f5f5f;
+    width: 650px;
+}
+
+.references .references_slider {
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.references .references_item {
+    margin: 0px 50px 0px 50px;
+}
+
+.contact {
+    padding: 75px 0px 95px 0px;
+    background-color: #000000;
+}
+
+.contact .contact_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contact .contact_hr {
+    margin-top: 10px;
+    width: 70px;
+    height: 2px;
+    border: none;
+    background-color: #4a4a4a;
+}
+
+.contact .contact_form {
+    max-width: 1140px;
+    margin-top:24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .contact_input {
+    color: #ffffff;
+    width: 525px;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    padding: 15px;
+    background: none;
+    border-radius: 0;
+    outline: none;
+}
+.contact .contact_input:nth-child(3) {
+    display: block;
+    width: 1205px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.contact .contact_input:focus {
+    border-bottom: 2px solid #56e2ff;
+}
+
+.contact .contact_btn {
+    line-height: 60px;
+    margin: 0 auto;
+    width: 180px;
+    height: 60px;
+    background-color: #202020;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+    transition: 0.3s all;
+    cursor: pointer;
+    border: none;
+}
+
+.contact_btn:hover {
+    background: rgba(0,0,0,0);
+	color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.footer {
+    height: 201px;
+    background-color: #343434;
+    background-image: linear-gradient(90.0deg, rgba(47,61,252,0.34) 0%, rgba(100,17,135,0.34) 70%, rgba(100,17,135,0.34) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+.footer .footer_logo {
+    margin-right: 70px;
+}
+.footer .footer_descr {
+    margin: 0px 70px 0px 70px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.footer .footer_connection {
+    margin: 0px 70px 0px 70px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.footer .footer_line1 {
+    display:flex;
+}
+.footer .footer_line2 {
+    display:flex;
+}
+.footer .footer_text   {
+    margin-left: 7px;
+}
+
+.footer .footer_social {
+    margin-left: 70px;
+}
+.footer .footer_item {
+    margin: 0px 10px 0px 10px;
+}

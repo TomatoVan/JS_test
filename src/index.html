@@ -9,21 +9,28 @@
 </head>
 <body>
     
-    <header>
-        <nav>
-            <div class="container">
-                <a class="logo" href="#">
-                    <img src="icons/logo.png" alt="logo">
-                </a>
-                <ul class="menu">
-                    <li class="menu_item"><a href="#">Services</a> </li>
-                    <li class="menu_item"><a href="#">Works</a> </li>
-                    <li class="menu_item"><a href="#">References</a> </li>
-                    <li class="menu_item"><a href="#">Contact</a> </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="#">
+                <img src="icons/logo.png" alt="logo">
+            </a>
+            <ul class="navbar_menu">
+                <li class="navbar_list">
+                    <a class="navbar_item" href="#1">Services</a>
+                </li>
+                <li class="navbar_list">
+                    <a class="navbar_item" href="#2">Works</a>
+                </li>
+                <li class="navbar_list">
+                    <a class="navbar_item" href="#3">References</a>
+                </li>
+                <li class="navbar_list">
+                    <a class="navbar_item" href="#4">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
 
     <section class="marketing">
         <div class="container">
@@ -32,12 +39,16 @@
                 <div class="marketing_descr">Consultancy</div>
 
             </div>
-            <img class="marketing_mouse" src="icons/mouse(.svg).svg" alt="">
+            <div class="marketing_arrow"> <!-- сделал похожую анимацию по видео, но все делал сам -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
         </div>
     </section>
-
-    <section class="services">
+    
+    <section class="services" id="1">
         <div class="container">
             <div class="services_heading">KREA.</div>
             <div class="title">Services</div>
@@ -59,11 +70,11 @@
                     <div class="services_about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, quo tenetur perferendis reiciendis illum dicta ratione ullam! Esse eum temporibus voluptas quas neque, corporis illo quia provident iste facere quae?</div>
                 </div>
             </div>
-            <button class="services_btn">GET IN TOUCH</button>
+            <a href='#4' class="services_btn">GET IN TOUCH</a>
         </div>
     </section>
-
-    <section class="works">
+    
+    <section class="works" id="2">
         <div class="container">
             <div class="title">Works</div>
             <hr class="works_hr">
@@ -100,7 +111,7 @@
 
     </section>
 
-    <section class="references">
+    <section class="references" id="3">
         <div class="container">
             <div class="title">References</div>
             <hr class="references_hr">
@@ -125,7 +136,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="4">
         <div class="container">
             <div class="contact_title">Contact</div>
             <hr class="contact_hr">
@@ -133,8 +144,8 @@
                 <input class="contact_input" name="name" placeholder="Full Name"  type="text"> 
                 <input class="contact_input" name="email" placeholder="E-mail"  type="email">
                 <input class="contact_input" name="message" placeholder="Message" type="text">
+                <button class="contact_btn">SEND</button>
             </form>
-            <div class="contact_btn">SEND</div>
         </div>
     </section>
 
@@ -174,7 +185,7 @@
         </div>
     </footer>
 
-
+    <script src="js/jquery.validate.min.js "></script>
     <script src="js/script.js"></script>
 </body>
 </html>

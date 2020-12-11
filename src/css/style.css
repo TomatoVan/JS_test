@@ -1,29 +1,24 @@
 *{
     font-family:'Ubuntu',sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0; 
     padding: 0;
 }
 
-header{
-    max-height: 1099px;
-    width: 100%;
-}
-
-nav {
+.navbar {
     position: fixed;
     top: 0;
-    margin-top: 0px;
     height: 80px;
     width: 100%;
     background: linear-gradient(89.26359094454074deg, rgba(46, 51, 117,1) 19.477393617021278%,rgba(46, 50, 116,1) 19.477393617021278%,rgba(59, 43, 91,1) 81.55186170212765%);
     padding:10px 0px 10px 0px;
     box-sizing: border-box;
-    z-index: 99;
+    z-index: 1;
 }
 
-header .container {
+.navbar .container {
     position: relative;
     display: flex;    
 }
@@ -33,17 +28,19 @@ header .container {
     margin:15px 100px 0px;
     
 }
-.menu {
+.navbar .navbar_menu {
     padding: 0px;
     display: flex;
     position: absolute;
     top: 5px;
     left: 1001px;
 }
-.menu .menu_item{
+.navbar .navbar_list{
     list-style-type: none;
 }
-.menu .menu_item a {
+.navbar .navbar_item  {
+    position: relative;
+    display: inline-block;
     margin: 0px 35px;
     font-size: 20px;
     line-height: 17px;
@@ -51,15 +48,17 @@ header .container {
     letter-spacing: -0.04em;
     color: #ffffff;
     text-decoration: none;
-
+    transition: 0.3s all;
+}
+.navbar .navbar_item:hover{
+    color: #85C2FF;
 }
 
 .marketing  {
     padding: 0px 0px 87px 0px;
     width: 100%;
-    height: 1099px;
+    height: 890px;;
     background: url('../img/bg/bg_1.png') center center/cover no-repeat;
-    
 }
 
 .marketing .marketing_text{
@@ -88,13 +87,45 @@ header .container {
     
 }
 
-.marketing .marketing_mouse {
+
+.marketing .marketing_arrow {
     position: absolute;
     bottom: 0px;
     top: 90%;
     left:50%;
     transform:translate(-50%, -50%);
-    
+}
+
+/* сделал похожую анимацию по видео, но все делал сам */
+
+.marketing_arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #CCCCFF;
+    border-right: 5px solid #CCCCFF;
+    transform: rotate(45deg);
+    margin: -16px;
+    animation: marketing_arrow 2s infinite;
+}
+.marketing_arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.marketing_arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes marketing_arrow{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
 
 .services {
@@ -182,7 +213,9 @@ header .container {
     border-radius:50px;
     outline: none;
     transition: 0.3s all;
-    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;    
     
 }
 .services_btn:hover {
@@ -347,7 +380,7 @@ header .container {
 }
 
 .contact .contact_btn {
-    line-height: 60px;
+    display: block;
     margin: 0 auto;
     width: 180px;
     height: 60px;
@@ -356,7 +389,6 @@ header .container {
     font-weight: 700;
     color: #ffffff;
     text-align: center;
-    outline: none;
     transition: 0.3s all;
     cursor: pointer;
     border: none;

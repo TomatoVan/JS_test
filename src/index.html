@@ -126,12 +126,12 @@
                 </div>
             </div>
             <div class="references_slider">
-                        <img src="img/references/r_1.png" alt="1" class="references_item">
-                        <img src="img/references/r_2.png" alt="2" class="references_item">
-                        <img src="img/references/r_3.png" alt="3" class="references_item">
-                        <img src="img/references/r_4.png" alt="4" class="references_item">
-                        <img src="img/references/r_5.png" alt="5" class="references_item">
-                        <img src="img/references/r_6.png" alt="6" class="references_item">
+                <img src="img/references/r_1.png" alt="1" class="references_item">
+                <img src="img/references/r_2.png" alt="2" class="references_item">
+                <img src="img/references/r_3.png" alt="3" class="references_item">
+                <img src="img/references/r_4.png" alt="4" class="references_item">
+                <img src="img/references/r_5.png" alt="5" class="references_item">
+                <img src="img/references/r_6.png" alt="6" class="references_item">
             </div>
         </div>
     </section>
@@ -140,12 +140,15 @@
         <div class="container">
             <div class="contact_title">Contact</div>
             <hr class="contact_hr">
-            <form class="contact_form " action="#">
-                <input class="contact_input" name="name" placeholder="Full Name"  type="text"> 
-                <input class="contact_input" name="email" placeholder="E-mail"  type="email">
-                <input class="contact_input" name="message" placeholder="Message" type="text">
-                <button class="contact_btn">SEND</button>
-            </form>
+            <div class="contact_wrapper">
+                <form class="contact_form">
+                    <input class="contact_input" name="name" placeholder="Full Name" required="required"  type="text" id="namesurname"> 
+                    <input class="contact_input" name="email" placeholder="E-mail" required="required"  type="email" id="mail">
+                    <input class="contact_input" name="message" placeholder="Message" required="required" type="text" id="message">
+                    <button class="contact_btn">SEND</button>
+                </form>
+            </div>
+            <div class="contact_block">Your message has been sent. Thank you!</div>
         </div>
     </section>
 
@@ -185,7 +188,8 @@
         </div>
     </footer>
 
-    <script src="js/jquery.validate.min.js "></script>
+   <!--  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> 
+    <script src="js/jquery.maskedinput.min.js" ></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>

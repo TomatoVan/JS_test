@@ -323,7 +323,13 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.contact .contact_block {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #5f5f5f;
+    text-align: center;
+}
 .references .references_item {
     margin: 0px 50px 0px 50px;
 }

@@ -20,7 +20,7 @@ body{
 
 .navbar .container {
     position: relative;
-    display: flex;    
+    display: flex;
 }
 .logo {
     display: block;
@@ -31,21 +31,21 @@ body{
 .navbar .navbar_menu {
     padding: 0px;
     display: flex;
-    position: absolute;
-    top: 5px;
-    left: 1001px;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 280px;
+    margin-bottom: 5px;
+    align-items: center;
 }
 .navbar .navbar_list{
     list-style-type: none;
 }
 .navbar .navbar_item  {
     position: relative;
-    display: inline-block;
     margin: 0px 35px;
     font-size: 20px;
     line-height: 17px;
     font-weight: 700;
-    letter-spacing: -0.04em;
     color: #ffffff;
     text-decoration: none;
     transition: 0.3s all;
@@ -55,21 +55,17 @@ body{
 }
 
 .marketing  {
-    padding: 0px 0px 87px 0px;
+    padding: 80px  0px 87px 0px;
     width: 100%;
-    height: 890px;;
-    background: url('../img/bg/bg_1.png') center center/cover no-repeat;
+    height: 810px;
+    background: url('../img/bg/bg_1.png') center center / cover no-repeat;
 }
 
 .marketing .marketing_text{
-    position: absolute;
-    top: 50%; 
-    margin-top: -70px; 
-    margin-left: -290px; 
-    left: 50%; 
+    display: block;
     line-height: 60px;
     text-align: center;
-
+    margin-top: 320px;
 }
 
 .marketing .marketing_heading {
@@ -82,18 +78,17 @@ body{
 
 .marketing .marketing_descr {
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 500;
     color: #ffffff;
     
 }
 
 
 .marketing .marketing_arrow {
-    position: absolute;
-    bottom: 0px;
-    top: 90%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* сделал похожую анимацию по видео, но все делал сам */
@@ -117,19 +112,19 @@ body{
 @keyframes marketing_arrow{
     0%{
         opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
+        transform: rotate(45deg) translate(-30px,-30px);
     }
     50%{
         opacity: 1;
     }
     100%{
         opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+        transform: rotate(45deg) translate(30px,30px);
     }
 }
 
 .services {
-    padding: 80px 0px 136px 0px;
+    padding: 60px 0px 136px 0px;
 }
 
 .services .services_heading {
@@ -160,7 +155,6 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
-
 }
 
 .services .services_item {
@@ -238,17 +232,17 @@ body{
  }
 
 .works .works_wrapper {
+    width: 100%;
     margin-top: 65px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
  }
 .works .works_col {
     display: flex;
     flex-direction: column;
-    
  }
-
 
 .works .works_item {
     width: 100%;
@@ -260,7 +254,7 @@ body{
 }
 
 .references {
-    padding: 147px 0px 108px 0px;
+    padding: 60px 0px 108px 0px;
     position: relative;
 }
 
@@ -273,25 +267,16 @@ body{
 }
 
 .references .references_wrapper {
+    width: 100%;
     margin-top: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.references .references_rails {
-    position: absolute;
-    right:66%;
-    bottom: 33%;
-    z-index: -1;
-    
-}
-
 .references .references_img {
-    width: 100%;
-    margin-right: 60px;
+    margin-right: 45px;
     width: 320px;
-    height: 320px;
 }
 
 .references .references_text {
@@ -322,20 +307,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
-.contact .contact_block {
-    display: none;
-    margin-top: 20px;
-    font-size: 20px;
-    color: #5f5f5f;
-    text-align: center;
-}
+
 .references .references_item {
-    margin: 0px 50px 0px 50px;
+    margin: 0px 30px 0px 30px;
 }
 
 .contact {
-    padding: 75px 0px 95px 0px;
+    width: 100%;
+    padding: 60px 0px 95px 0px;
     background-color: #000000;
 }
 
@@ -377,7 +358,7 @@ body{
 }
 .contact .contact_input:nth-child(3) {
     display: block;
-    width: 1205px;
+    width: 1140px;
     margin-top: 30px;
     margin-bottom: 60px;
 }
@@ -394,7 +375,6 @@ body{
     font-size: 17px;
     font-weight: 700;
     color: #ffffff;
-    text-align: center;
     transition: 0.3s all;
     cursor: pointer;
     border: none;
@@ -404,6 +384,14 @@ body{
     background: rgba(0,0,0,0);
 	color: #3a7999;
     box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.contact .contact_block {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #5f5f5f;
+    text-align: center;
 }
 
 .footer {
